@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FALA — Aula 1 de Inglês</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6fb;
+    color: #172033;
+}
+
+header {
+    background: linear-gradient(135deg, #315eea, #7138e8);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 18px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+h2 {
+    color: #315eea;
+}
+
+.word {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px 0 5px;
+}
+
+.translation {
+    color: #666;
+}
+
+button {
+    background: #315eea;
+    color: white;
+    border: none;
+    padding: 14px 22px;
+    border-radius: 12px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #244bc0;
+}
+
+.back {
+    background: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🇬🇧 FALA</h1>
+    <p>Aula 1 — Primeiras palavras em Inglês</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>👋 Vamos começar!</h2>
+        <p>
+            Nesta primeira aula vais aprender algumas palavras
+            e frases simples para começares a falar inglês.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>📚 Vocabulário</h2>
+
+        <div class="word">Hello</div>
+        <div class="translation">Olá</div>
+
+        <div class="word">Good morning</div>
+        <div class="translation">Bom dia</div>
+
+        <div class="word">Good evening</div>
+        <div class="translation">Boa tarde / Boa noite</div>
+
+        <div class="word">Thank you</div>
+        <div class="translation">Obrigado/a</div>
+
+        <div class="word">Please</div>
+        <div class="translation">Por favor</div>
+
+        <div class="word">Yes</div>
+        <div class="translation">Sim</div>
+
+        <div class="word">No</div>
+        <div class="translation">Não</div>
+    </div>
+
+    <div class="card">
+        <h2>🗣️ Primeira conversa</h2>
+
+        <p><strong>Hello!</strong> — Olá!</p>
+        <p><strong>How are you?</strong> — Como estás?</p>
+        <p><strong>I am fine.</strong> — Estou bem.</p>
+        <p><strong>Thank you.</strong> — Obrigado/a.</p>
+    </div>
+
+    <div class="card">
+        <h2>🎯 Exercício</h2>
+
+        <p>Como se diz <strong>“Olá”</strong> em inglês?</p>
+
+        <button onclick="resposta('Hello')">Ver resposta</button>
+
+        <p id="resposta"></p>
+    </div>
+
+    <div class="card">
+        <h2>🤖 Professor FALA</h2>
+
+        <p>
+            Pratica comigo! Diz em voz alta:
+        </p>
+
+        <p><strong>Hello, my name is...</strong></p>
+
+        <button onclick="alert('Muito bem! Agora completa: Hello, my name is...')">
+            Praticar
+        </button>
+    </div>
+
+    <button class="back" onclick="location.href='index.html'">
+        ← Voltar à FALA
+    </button>
+
+</div>
+
+<footer>
+    © 2026 FALA — Aprende línguas com IA
+</footer>
+
+<script>
+function resposta(texto) {
+    document.getElementById("resposta").innerHTML =
+        "✅ Correto! A resposta é: <strong>" + texto + "</strong>";
+}
+</script>
+
+</body>
+</html>
